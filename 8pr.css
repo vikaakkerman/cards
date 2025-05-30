@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif; 
+}
+
+
+.scene {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #87CEEB; 
+  transform: translate3d(0, 0, 0);
+  overflow: hidden; 
+}
+
+
+.layer-1 {
+  animation: animation_fg_1 linear 30s infinite both;
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2014.png') 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+
+.layer-2 {
+  animation: animation_fg_2 linear 55s infinite both;
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2017.png') 0 100% repeat-x;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 180px;
+}
+
+.layer-3 {
+  animation: animation_fg_3 linear 75s infinite both;
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2018.png') 0 100% repeat-x;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 220px;
+}
+
+.layer-4 {
+  animation: animation_fg_4 linear 95s infinite both;
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2019.png') 0 100% repeat-x;
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 260px;
+}
+
+.layer-5 {
+  animation: animation_fg_5 linear 120s infinite both;
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2020.png') 0 100% repeat-x;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 300px;
+}
+
+
+.moving-object-1 {
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2015.png') 0 100% no-repeat;
+  z-index: 6;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 75px;
+  animation: animation_moving_object_1 linear 10s infinite both;
+}
+
+.moving-object-2 {
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2016.png') 0 100% no-repeat;
+  z-index: 7;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 90px;
+  animation: animation_moving_object_2 linear 15s infinite both;
+}
+
+
+.moving-object-2-duplicate {
+  background: url('https://github.com/vikaakkerman/cards/blob/18607e40524d8c5438254995ef5f7ac6ab03402a/Frame%2016.png') 0 100% no-repeat;
+  z-index: 8;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 90px;
+  animation: animation_moving_object_2 linear 25s infinite both;
+}
+
+
+@keyframes animation_fg_1 {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes animation_fg_2 {
+  0% {
+    background-position: 3000px 100%;
+  }
+  100% {
+    background-position: 600px 100%;
+  }
+}
+
+@keyframes animation_fg_3 {
+  0% {
+    background-position: 3500px 100%;
+  }
+  100% {
+    background-position: 700px 100%;
+  }
+}
+
+@keyframes animation_fg_4 {
+  0% {
+    background-position: 4000px 100%;
+  }
+  100% {
+    background-position: 800px 100%;
+  }
+}
+
+@keyframes animation_fg_5 {
+  0% {
+    background-position: 4500px 100%;
+  }
+  100% {
+    background-position: 900px 100%;
+  }
+}
+
+/* 10. Keyframes для движущихся объектов */
+@keyframes animation_moving_object_1 {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+
+@keyframes animation_moving_object_2 {
+  0% {
+    background-position: -500px 100%;
+  }
+  100% {
+    background-position: 2500px 100%;
+  }
+}
